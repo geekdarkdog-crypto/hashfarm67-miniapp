@@ -89,7 +89,20 @@ footer {
 
    <div class="product">
     <h3>Static⚡️ Sticker (OBSXSS)</h3>
-<img src="https://geekdarkdog-crypto.github.io/hashfarm67-miniapp/fotoplak.jpg" alt="fotoplak.jpg" style="width:100%; border-radius:15px; margin:15px 0;">
+<img
+  src="https://geekdarkdog-crypto.github.io/hashfarm67-miniapp/fotoplak.jpg"
+  alt="Photo du produit"
+  onclick="document.getElementById('photoZoom').style.display='flex'"
+  style="width:100%; border-radius:15px; margin:15px 0; cursor:zoom-in;">
+
+<div id="photoZoom"
+  onclick="this.style.display='none'"
+  style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.95); z-index:9999; align-items:center; justify-content:center; padding:15px;">
+
+  <img
+    src="https://geekdarkdog-crypto.github.io/hashfarm67-miniapp/fotoplak.jpg"
+    style="max-width:100%; max-height:95%; object-fit:contain; border-radius:12px;">
+</div>
     <video controls playsinline preload="metadata"
            style="width:100%; border-radius:15px; background:#000;">
      <source src="https://geekdarkdog-crypto.github.io/hashfarm67-miniapp/lv_0_20261114232112.mp4" type="video/mp4">
